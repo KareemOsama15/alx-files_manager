@@ -6,7 +6,6 @@ import { ObjectID } from 'mongodb';
 import redisClient from './utils/redis';
 import dbClient from './utils/db';
 
-
 const writeFileAsync = promisify(writeFile);
 const fileQueue = new Queue('thumbnail generation');
 const userQueue = new Queue('email sending');
